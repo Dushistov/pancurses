@@ -24,7 +24,7 @@ libc = "0.2"
 [target.'cfg(windows)'.dependencies]
 pdcurses-sys = "0.4"
 [target.'cfg(unix)'.dependencies]
-ncurses = "5.82.0"
+ncurses = { git = "https://github.com/jeaye/ncurses-rs", rev = "49622f1797715c7b8dcb896a0957a16851d0f156" }
 
 [dev-dependencies]
 rand = "0.3"
